@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="styles4.css" />
+    <link rel="shortcut icon" href="Thermometer.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="logo">
+        <img src="Thermometer.png" alt="Thermometer Logo" height="100%" />
+      </div>
+      <div class="heading">
+        <h1>Temperature Converter</h1>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="form">
+        <h2>Enter Temperature</h2>
+        <input type="number" placeholder="Enter Temperature" id="input" />
+
+        <select name="unit" id="unit"> 
+            <option value="">Choose Unit</option>
+            <option value="Fahrenheit">Fahrenheit</option>
+            <option value="Celsius">Celsius</option>
+            <option value="Kelvin">Kelvin</option>
+          </select>
+
+        <div class="button">
+          <input type="button" id="button" onclick="convert();" value="Convert" />
+        </div>
+
+        <h2>Result</h2>
+        <input type="text" placeholder="Result" id="output" readonly />
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
